@@ -30,4 +30,24 @@ p{
 .container{
   max-width: 540px
 }
-
+a:visited {
+   color: white;
+   background-color: transparent;
+   text-decoration: none;
+   text-align: center;
+}
+.header {
+   background-color:#32d34d;
+   padding: 30px;
+   text-align: center;
+}
+.header2{
+   background-color:#6b69e0;
+   padding: 30px;
+   text-align: center;
+}
+.header3{
+   background-color: orange;
+   padding: 30px;
+   text-align: center;
+}

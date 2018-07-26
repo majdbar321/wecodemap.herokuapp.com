@@ -21,7 +21,9 @@ def homepage():
 @app.route('/register')
 def registerpage():
 	return render_template('userform.jinja')
-
+@app.route("/contact")
+def contact():
+	return render_template("contact.html")
 @app.route('/map')
 def map():
 	return render_template("mapp.html")
