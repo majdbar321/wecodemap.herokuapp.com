@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block body %}
+<html>
+    <!DOCTYPE html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+    position: relative;
+    width: 100%;
+    
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.container .btn {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .btn:hover {
+    background-color: black;
+}
+</style>
+
+
+<img src="static/images/map2.jpg" alt="Workplace" usemap="#workmap"  style="width: 1012px; height: 1248px;">
+
+<map name="workmap">
+ <area alt="Main building" title="Main building" href="static/images/1.jpg" shape="poly" coords="433,711,454,759,480,740,468,694" />
+    <area alt="Kitchen" title="Kitchen" href="static/images/43.jpg" shape="poly" coords="602,599,583,627,607,656,703,715,735,676,727,623,673,588" />
+    <area alt="enterance" title="enterance" href="static/images/61.jpg" shape="poly" coords="764,862,743,872,604,768,616,759" />
+    <area alt="play ground" title="play ground" href="static/images/52.jpg" shape="poly" coords="603,728,607,744,664,763,691,729,661,701" />
+    <area alt="way to Kitchen" title="way to kitchen" href="static/images/73.jpg" shape="poly" coords="728,715,715,708,673,783,659,778" />
+    <area alt="soccer field" title="soccer field" href="static/images/22.jpg" shape="poly" coords="384,650,356,662,401,778,419,773" />
+    <area alt="way to forest" title="way to forest" href="static/images/9.jpg" shape="poly" coords="501,708,482,703,512,643,526,649" />
+   <head>
+      <title>Image Full-Screen  On Click.</title>
+    </head>
+    <!-- <body>
+      <div>
+        <img id="1"src="static/images/map2.jpg" width="50px" alt="HELLo">
+      </div>
+      <div class="container">
+    <img src="static/images/1.jpg" alt="map" style="width:100%">
+    <button class="btn">Button</button>
+    </div>
+      <input id="clickbutton" type="button" value="Click" onclick= "showimage()"/> 
+    </body> -->
+
+    <script type="text/javascript">
+function showimage()
+{
+    document.getElementById('1').style.width= "1000px";
+    document.getElementById('1').style.height= "500px";
+
+    <!--
+
+    // $("body").css("background-image","url('static/images/map2.jpg')"); // Onclick of button the background image of body will be test here. Give the image path in url
+    // $('#clickbutton').hide(); //This will hide the button specified in html
+
+}
+</script>
+</html>
+
+{% endblock %}

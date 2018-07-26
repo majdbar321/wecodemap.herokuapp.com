@@ -1,0 +1,8 @@
+{% extends "base.jinja" %}
+{% block body %} 
+{% for message in messages %}
+FROM: {{message["sender"] }}<br>
+TO: {{message["recipient"] }}<br>
+TEXT: {{message["text"] }}<br>
+{% endfor %}
+{% endblock %}
